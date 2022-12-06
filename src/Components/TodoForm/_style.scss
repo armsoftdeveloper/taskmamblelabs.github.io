@@ -1,0 +1,58 @@
+form{
+    width: 84%;
+    .warning{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        text-transform: capitalize;
+        color: #FF3104;
+    }
+    .taskAdd{
+        display: flex;
+        align-items: center;
+        grid-gap: 10px;
+        input{
+            height: 52px;
+        }
+    }
+    .heading{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        text-transform: capitalize;
+        color: #174348;
+    }
+    div{
+        ::placeholder{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 27px;
+            text-transform: capitalize;
+            color: #DFDFDF;
+        }
+        input{
+            border: 1px solid #FFCD04 !important;
+            border-radius: 4px !important;
+        }
+        button{
+            background: #008594;
+            border-radius: 4px;
+            border:none;
+            width:100px;
+            height:52px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 28px;
+            text-transform: capitalize;
+            color: #FFFFFF;
+        }
+    }
+}

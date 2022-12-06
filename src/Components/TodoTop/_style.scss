@@ -1,0 +1,90 @@
+.todoTop{
+    .hideText{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        text-transform: capitalize;
+        color: #000000;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+    .container {
+        height: 72px;
+        display: flex;
+        align-items: center;
+        // justify-content: flex-end;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        user-select: none;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px;
+        text-transform: capitalize;
+        color: #ACACAC;
+        .remove{
+            display: flex;
+            border: none;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: none;
+            height: 18.18px !important;
+            width: 18.18px !important;
+            color: #174348;
+            cursor: pointer;
+        }
+        .todoText{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 32px;
+            text-transform: capitalize;
+            color: #666666;
+        }
+        input {
+            position: absolute;
+            opacity: 0;
+            height: 0;
+            width: 0;
+          }
+          .checkmark {
+            position: absolute;
+            top: 20.8px;
+            left: 1px;
+            height: 20px;
+            width: 20px;
+            background-color: #fff;
+            border: 2.5px #008594 solid;
+            cursor: pointer !important;
+          }
+          .container:hover input ~ .checkmark {
+            background-color: #ccc;
+          }
+      }
+    .container input:checked ~ .checkmark {
+        background: #008594;
+    }
+    .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+    .container input:checked ~ .checkmark:after {
+        display: block;
+    }
+    .container .checkmark:after {
+        left: 4.5px;
+        top: 0.2px;
+        width: 7px;
+        height: 12px;
+        border: solid white;
+        border-width: 0 2px 2px 0;
+        transform: rotate(35deg);
+    }
+}
